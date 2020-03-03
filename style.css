@@ -17,7 +17,30 @@ header h1 {
 	border-radius : 0.5em;
 }
 .question p {
-	padding : 1.2em;
+	padding : 1.5em;
 	font-size: 1em;
 	line-height: 1.5em;
+}
+button {
+	background: yellow;
+	margin : 1em;
+	width: auto;
+	height : 2em;
+	outline: none;
+	font-size: 1.5em;
+	border:1px solid yellow;
+}
+.spoiler-content {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+.spoiler-content.visible {
+    display: inline;
+    width: auto;
+    height: auto;
+    opacity: 1;
 }
