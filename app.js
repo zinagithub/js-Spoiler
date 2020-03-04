@@ -14,10 +14,18 @@ var createSpoilerBtn = function (element) {
     element.appendChild(btn);
     element.appendChild(span);
     btn.addEventListener('click',function(){
-       btn.parentNode.removeChild(btn);
-       span.classList.add('visible');
+       //btn.parentNode.removeChild(btn);
+       if (btn.textContent == 'Display Spoiler'){
+           btn.textContent= 'Hide Spoiler';
+           span.classList.add('visible');
+       }else{
+           btn.textContent= 'Display Spoiler';
+           span.classList.remove('visible');
+       }
+       
     });
 }
+
 for (var i = 0;i < elm.length;i++){
    createSpoilerBtn(elm[i])
 }

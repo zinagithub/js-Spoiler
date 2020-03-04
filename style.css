@@ -15,20 +15,33 @@ header h1 {
 	background : #0c2461;
 	color : white;
 	border-radius : 0.5em;
+	border-bottom: 1.5em;
 }
 .question p {
 	padding : 1.5em;
+	padding-bottom: 0;
 	font-size: 1em;
-	line-height: 1.5em;
+	line-height: 2em;
+}
+.question__content {
+    margin-left: 1.5em;
 }
 button {
 	background: yellow;
 	margin : 1em;
+	margin-top: 0;
 	width: auto;
 	height : 2em;
 	outline: none;
 	font-size: 1.5em;
 	border:1px solid yellow;
+	display: block
+}
+.spoiler {
+	margin-bottom: 1.5em;
+}
+span {
+	margin: 0;
 }
 .spoiler-content {
     display: inline-block;
@@ -39,8 +52,9 @@ button {
     transition: opacity 0.5s;
 }
 .spoiler-content.visible {
-    display: inline;
+    display: block;
     width: auto;
     height: auto;
     opacity: 1;
+    padding: 1.5em;
 }
