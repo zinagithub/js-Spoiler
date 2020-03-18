@@ -18,3 +18,6 @@ git clone git@github.com:zinagithub/js-Spoiler.git
 ## Authors
 
 * **Talaa Zina** (https://github.com/zinagithub)
+
+# Live version
+   https://zinagithub.github.io/js-Spoiler/index.html
