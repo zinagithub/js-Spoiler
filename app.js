@@ -1,4 +1,4 @@
-var elm = document.querySelectorAll('.spoiler');
+
 var createSpoilerBtn = function (element) {
    // create the span that englobs the spoiler content
    var span = document.createElement("span");
@@ -26,6 +26,8 @@ var createSpoilerBtn = function (element) {
     });
 }
 
+
+var elm = document.querySelectorAll('.spoiler');
 for (var i = 0;i < elm.length;i++){
    createSpoilerBtn(elm[i])
 }
