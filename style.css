@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
 body {
-	background : #1e3799;
+	background : /*#1e3799*/#DDD;
 	padding : 1.5em;
 	font-family: 'Montserrat', sans-serif;
+	color: #333333;
 }
 .container {
 	
@@ -12,29 +13,37 @@ header h1 {
 	text-align : center;
 }
 .question {
-	background : #0c2461;
+	background : #ece8e8/*#0c2461*/;
 	color : white;
 	border-radius : 0.5em;
 	border-bottom: 1.5em;
+	box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
 }
 .question p {
 	padding : 1.5em;
 	padding-bottom: 0;
 	font-size: 1em;
 	line-height: 2em;
+	color: #333333;
+}
+.question__content:before{
+	content : "Q:";
+	font-size: 1.2em;
+	font-weight: bold;
+	border-radius: 50%;
 }
 .question__content {
     margin-left: 1.5em;
 }
 button {
-	background: yellow;
+	background: rgba(0, 0, 255, .2);
 	margin : 1em;
 	margin-top: 0;
 	width: auto;
 	height : 2em;
 	outline: none;
 	font-size: 1.5em;
-	border:1px solid yellow;
+	border:1px solid rgba(0, 0, 255, .2);
 	display: block
 }
 .spoiler {
